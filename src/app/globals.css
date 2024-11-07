@@ -1,21 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+    font-family: var(--font-poppins);
+    font-weight: 300;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.shadow-left {
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.074); /* Adjust values as needed */
 }
