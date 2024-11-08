@@ -7,22 +7,21 @@ import Image from "next/image";
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [header, setHeader] = useState(false)
+  const [header, setHeader] = useState(false);
   const scrollheader = () => {
     if (window.scrollY >= 3) {
-      setHeader(true)
+      setHeader(true);
+    } else {
+      setHeader(false);
     }
-    else{
-      setHeader(false)
-    }
-  }
-useEffect(() => {
- window.addEventListener("scroll", scrollheader);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", scrollheader);
 
- return () => {
-   window.removeEventListener("scroll", scrollheader);
- };
-}, [])
+    return () => {
+      window.removeEventListener("scroll", scrollheader);
+    };
+  }, []);
 
   return (
     <header
@@ -98,11 +97,20 @@ useEffect(() => {
             Solutions
             <span className="absolute left-0 bottom-0 h-0.5 w-full bg-[#FF9141] scale-x-0 transition-transform duration-200 ease-in-out group-hover:scale-x-100" />
           </a>
+          <a
+            href="#"
+            className={`relative text-sm font-semibold ${
+              header ? "text-gray-900" : "text-white"
+            } group`}
+          >
+            Team
+            <span className="absolute left-0 bottom-0 h-0.5 w-full bg-[#FF9141] scale-x-0 transition-transform duration-200 ease-in-out group-hover:scale-x-100" />
+          </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button
             type="button"
-            className="text-white bg-[#5D17EB] hover:bg-[#5D17EB] focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#5D17EB] dark:hover:bg-[#FF9141]  hover:text-black focus:outline-none dark:focus:ring-blue-800 duration-300 ease-in-out font-bold"
+            className="text-white bg-[#5D17EB] hover:bg-[#5D17EB] focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#5D17EB] dark:hover:bg-[#FF9141]   focus:outline-none dark:focus:ring-blue-800 duration-300 ease-in-out font-bold"
           >
             Contact Us
           </button>
@@ -155,6 +163,11 @@ useEffect(() => {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Solutions
+                </a><a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Team
                 </a>
               </div>
               <div className="py-6">

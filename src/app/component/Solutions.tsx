@@ -4,11 +4,14 @@ import React from 'react'
 const Solutions = () => {
   return (
     <section className="bg-white ">
-      <h1 className="text-3xl font-[400] text-gray-900 text-center mb-12">
-        Our <span className="text-blueish font-[500]">Services</span>
+      <h1
+        data-aos="zoom-in-down"
+        className="text-3xl font-[400] text-gray-900 text-center mb-12"
+      >
+        Our <span className="text-blueish font-[500]">Solution</span>
       </h1>
       <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
-        <div className="flex  justify-center xl:w-1/2">
+        <div data-aos="zoom-in-right" className="flex  justify-center xl:w-1/2">
           <Image
             className="h-80 w-80 sm:w-[28rem] shadow-2xl sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
             src="/haletaapp.avif"
@@ -19,7 +22,10 @@ const Solutions = () => {
         </div>
 
         <div className="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
-          <p className="block max-w-2xl mt-4 text-gray-900 py-7 md:py-5">
+          <p
+            data-aos="zoom-in-left"
+            className="block max-w-2xl mt-4 text-gray-900 py-7 md:py-5"
+          >
             Our mobile app offers real-time tracking of ambulance arrivals,
             providing estimated arrival times for both emergency and
             non-emergency medical services. With a simple shortcode, you can
@@ -29,6 +35,7 @@ const Solutions = () => {
 
           <div className="mt-6 sm:-mx-2">
             <a
+              data-aos="fade-up"
               href="#"
               className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-[#FF9141] rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-[#d37a3a]   focus:ring focus:ring-gray-300 focus:ring-opacity-80"
             >
@@ -66,6 +73,7 @@ const Solutions = () => {
 
             <a
               href="#"
+              data-aos="fade-up"
               className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
             >
               <svg

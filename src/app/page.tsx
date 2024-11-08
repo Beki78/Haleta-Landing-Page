@@ -1,4 +1,6 @@
 import About from "./component/About";
+import Accordion from "./component/Accordion";
+import Contact from "./component/Contact";
 import Footer5 from "./component/Footer";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
@@ -15,6 +17,8 @@ const pages = () => {
       <Services/>
       <Solutions/>
       <Team/>
+      <Accordion/>
+      <Contact/>
       <Footer5/>
     </div>
   );

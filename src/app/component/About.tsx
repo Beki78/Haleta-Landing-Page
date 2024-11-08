@@ -4,8 +4,11 @@ import React from 'react'
 const About = () => {
   return (
     <div className="my-16">
-      <h1 className="text-3xl font-[400] text-gray-900 text-center mb-12">
-        About <span className='text-blueish font-[500]'>Haleta</span>
+      <h1
+        data-aos="fade-up"
+        className="text-3xl font-[400] text-gray-900 text-center mb-12"
+      >
+        About <span className="text-blueish font-[500]">Haleta</span>
       </h1>
       <div className="flex flex-col lg:flex-row gap-12 justify-between items-center mx-20">
         <video
@@ -14,15 +17,20 @@ const About = () => {
           autoPlay
           muted
           loop
+          data-aos="zoom-in-down"
           className="w-full lg:w-1/2 max-w-xl mx-auto mt-8 px-2 shadow-2xl shadow-[#6F7CB2] "
         ></video>
-        <div className="shadow-left px-4 py-10 rounded-md ">
+
+        <div
+          data-aos="zoom-in-down"
+          className="shadow-left px-4 py-10 rounded-md "
+        >
           <p>
             Haleta is a health care platform that provides reliable and easily
             accessible medical transportation services, ensuring a safe and
-              comfortable journey for every patient. We offer a variety of
-              services to meet your needs, from emergency ambulance transport to
-              non-emergency medical appointments.
+            comfortable journey for every patient. We offer a variety of
+            services to meet your needs, from emergency ambulance transport to
+            non-emergency medical appointments.
           </p>
           <div className="mt-6">
             <div className="flex gap-2">
