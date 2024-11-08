@@ -29,9 +29,8 @@ export default function Example() {
   return (
     <header
       className={
-        header
-          ? "fixed shadow-lg z-10 bg-white max-w-full transition-all duration-500 ease-in-out rounded-bl-3xl rounded-br-3xl "
-          : "bg-gray-800 max-w-full"
+         "fixed shadow-lg z-10 bg-white max-w-full transition-all duration-500 ease-in-out rounded-bl-3xl rounded-br-3xl "
+        
       }
     >
       <nav
