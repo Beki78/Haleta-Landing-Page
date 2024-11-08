@@ -12,7 +12,7 @@ import Services from "./component/Services";
 import Solutions from "./component/Solutions";
 import Team from "./component/Team";
 import { DotLoader } from "react-spinners";
-import FloatingIcon from "./component/FloatingIcon";
+// import FloatingIcon from "./component/FloatingIcon";
 
 const Pages = () => {
   const [loading, setLoading] = useState(true);
@@ -76,7 +76,7 @@ const Pages = () => {
           <Element name="footer">
             <Footer5 />
           </Element>
-          <FloatingIcon />
+          {/* <FloatingIcon /> */}
         </>
       )}
     </div>
