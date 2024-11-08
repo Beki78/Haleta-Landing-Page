@@ -4,6 +4,7 @@
 body{
     font-family: var(--font-poppins);
     font-weight: 300;
+    overflow-x: hidden;
 }
 .shadow-left {
   box-shadow: 4px 0 20px rgba(0, 0, 0, 0.074); /* Adjust values as needed */
