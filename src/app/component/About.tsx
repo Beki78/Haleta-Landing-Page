@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="my-16">
+    <div className="my-16 ">
       <h1
         data-aos="fade-up"
         className="text-3xl font-[400] text-gray-900 text-center mb-12"

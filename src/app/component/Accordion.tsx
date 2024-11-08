@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 const Accordion = () => {
@@ -10,41 +10,49 @@ const Accordion = () => {
 
   const faqs = [
     {
-      question: "What are the advantages of your service?",
+      question: "What is Haleta and how does it work?",
       answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+        "Haleta is a comprehensive healthcare service platform designed to connect users with emergency transport services, health updates, and essential medical information. Through our easy-to-use mobile app, you can request medical transportation, receive notifications about health news, and access reliable healthcare services tailored to your needs.",
     },
     {
-      question:
-        "Are there any fees or commissions in addition to the monthly subscription?",
+      question: "Who can use Haleta?",
       answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+        "Haleta is available for anyone needing quick access to emergency medical transport, health updates, or assistance with non-emergency medical transportation (NEMT). Our services cater especially to families, elderly individuals, people with disabilities, and anyone seeking safe, reliable healthcare access.",
     },
     {
-      question: "You really don't charge per user? Why not?",
+      question: "How can I request an emergency transport through Haleta?",
       answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+        "Simply open the Haleta app, select the “Request Emergency Transport” option, and follow the prompts to confirm your location and transport requirements. We’ll immediately connect you with the nearest ambulance or medical transport provider.",
     },
     {
-      question: "What happens when I go over my monthly active limit?",
+      question: "What types of transportation does Haleta offer?",
       answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+        "Haleta offers a range of transportation options, including basic ambulances, advanced ambulances, VIP transport vehicles, and regular automobiles for non-emergency medical needs. We ensure that each option is equipped for safe and comfortable travel, tailored to your specific requirements.",
     },
     {
-      question:
-        "Can your service help me understand how to work with my product?",
+      question: "Is Haleta available 24/7?",
       answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+        " Yes, Haleta is available 24/7 to ensure that you can access emergency medical transportation and support whenever you need it, day or night.",
     },
     {
-      question: "Which third-party application do you integrate with?",
+      question: "How much does it cost to use Haleta’s services?",
       answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+        "The cost varies based on the type of transportation or service needed. Our app provides a transparent pricing structure so you can see and understand any fees before you confirm a request.",
     },
     {
-      question: "I have another question!",
+      question: "How do I get updates on health information through Haleta?",
       answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+        "Our app provides a dedicated section for health updates, where you can read the latest health news, advisories, and information on preventative care. You can also opt-in to receive notifications about critical health updates.",
+    },
+    {
+      question: "Can I use Haleta for scheduled medical appointments?",
+      answer:
+        "Yes, Haleta provides Non-Emergency Medical Transportation (NEMT) services, which allow you to schedule medical transport in advance for routine appointments, treatments, or check-ups.",
+    },
+    {
+      question: "How do I get started with Haleta?",
+      answer:
+        "Getting started with Haleta is simple! Download our app from the App Store or Google Play, create a free account, and you’ll be ready to access all our services, from emergency transport to health information and more.",
     },
   ];
 

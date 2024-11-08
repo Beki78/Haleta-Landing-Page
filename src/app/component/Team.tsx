@@ -3,7 +3,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <section className="dark:bg-gray-100 py-20">
+    <section className="dark:bg-gray-100 py-20 ">
       <div className="container px-6 py-10 mx-auto">
         
         <h1 data-aos="fade-up" className="text-3xl font-[500] text-gray-900 text-center mb-12">

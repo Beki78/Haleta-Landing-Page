@@ -20,7 +20,7 @@ const Contact = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path
                       strokeLinecap="round"
@@ -35,7 +35,7 @@ const Contact = () => {
                   </svg>
 
                   <span className="mx-2 text-gray-700 truncate w-72 ">
-                    Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+                    Addis Ababa, Ethiopia
                   </span>
                 </p>
 
@@ -46,7 +46,7 @@ const Contact = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path
                       strokeLinecap="round"
@@ -56,7 +56,7 @@ const Contact = () => {
                   </svg>
 
                   <span className="mx-2 text-gray-700 truncate w-72 ">
-                    (257) 563-7401
+                    +251991117306
                   </span>
                 </p>
 
@@ -67,7 +67,7 @@ const Contact = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path
                       strokeLinecap="round"
@@ -77,7 +77,7 @@ const Contact = () => {
                   </svg>
 
                   <span className="mx-2 text-gray-700 truncate w-72 ">
-                    acb@example.com
+                    haletamedical@gmail.com
                   </span>
                 </p>
               </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                   <ul className="flex items-center justify-center space-x-8 xl:justify-end">
                     <li>
                       <a
-                        href="https://facebook.com"
+                        href="https://www.linkedin.com/company/haleta-medical-services/"
                         title="Linedin"
                         target="_blank"
                         rel="noopener noreferrer"
