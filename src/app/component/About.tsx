@@ -10,7 +10,7 @@ const About = () => {
       >
         About <span className="text-blueish font-[500]">Haleta</span>
       </h1>
-      <div className="flex flex-col lg:flex-row gap-12 justify-between items-center mx-20">
+      <div className="flex flex-col lg:flex-row gap-12 justify-between items-center mx-4 md:mx-12 lg:mx-16">
         <video
           src="/video.mp4"
           controls

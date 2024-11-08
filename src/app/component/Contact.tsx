@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <div>
       <section className="bg-gray-100 py-12">
-        <div className="container px-6 py-12 mx-auto">
-          <div className="lg:flex lg:items-center mx-10 md:-mx-5 lg:mx-7 xl:mx-20 ">
+        <div className="container py-12 mx-auto">
+          <div className="lg:flex lg:items-center mx-4 md:mx-12 lg:mx-7 xl:mx-20 ">
             <div data-aos="zoom-out-right" className="lg:w-1/2 lg:mx-6 ">
               <h1 className="text-2xl font-semibold text-gray-900 capitalize lg:text-3xl">
                 Contact us for <br /> more info
