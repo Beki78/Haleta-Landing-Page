@@ -50,7 +50,7 @@ const Pages = () => {
         </div>
       )}
       {!loading && (
-        <>
+        <div className="overflow-x-hidden bg-black overflow-y-hidden">
           <Navbar />
           <Element name="home">
             <Hero />
@@ -77,7 +77,7 @@ const Pages = () => {
             <Footer5 />
           </Element>
           {/* <FloatingIcon /> */}
-        </>
+        </div>
       )}
     </div>
   );
