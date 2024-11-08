@@ -23,15 +23,15 @@ export default function Example() {
       window.removeEventListener("scroll", scrollheader);
     };
   }, []);
-   const navbarHeight = 220; 
-   const navbarHeight2 = 100; 
+  const navbarHeight = 220;
+  const navbarHeight2 = 100;
 
   return (
     <header
       className={
         header
-          ? "fixed shadow-lg z-10 bg-white w-full transition-all duration-500 ease-in-out rounded-bl-3xl rounded-br-3xl "
-          : "bg-gray-800"
+          ? "fixed shadow-lg z-10 bg-white max-w-full transition-all duration-500 ease-in-out rounded-bl-3xl rounded-br-3xl "
+          : "bg-gray-800 max-w-full"
       }
     >
       <nav
