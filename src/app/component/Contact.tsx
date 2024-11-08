@@ -1,13 +1,63 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
-const Contact = () => {
+const Contact: React.FC = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const form = useRef<HTMLFormElement | null>(null); 
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_j2jhjn6",
+          "template_2xbuhom",
+          form.current,
+          "V9zzDoynjPinXgUYN"
+        )
+        .then(
+          () => {
+            setName("");
+            setEmail("");
+            setMessage("");
+            toast.success("Message sent!", {
+              position: "top-right",
+              autoClose: 4000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
+          },
+          () => {
+            toast.error("Message failed!", {
+              position: "top-right",
+              autoClose: 4000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
+          }
+        );
+    }
+  };
+
   return (
     <div>
-      <section className="bg-gray-100 py-12">
+      <section className="bg-gray-100 py-12 rounded-3xl">
         <div className="container py-12 mx-auto">
-          <div className="lg:flex lg:items-center mx-4 md:mx-12 lg:mx-7 xl:mx-20 ">
-            <div data-aos="zoom-out-right" className="lg:w-1/2 lg:mx-6 ">
+          <div className="lg:flex lg:items-center mx-4 md:mx-12 lg:mx-7 xl:mx-20">
+            <div data-aos="zoom-out-right" className="lg:w-1/2 lg:mx-6">
               <h1 className="text-2xl font-semibold text-gray-900 capitalize lg:text-3xl">
                 Contact us for <br /> more info
               </h1>
@@ -34,7 +84,7 @@ const Contact = () => {
                     />
                   </svg>
 
-                  <span className="mx-2 text-gray-700 truncate w-72 ">
+                  <span className="mx-2 text-gray-700 truncate w-72">
                     Addis Ababa, Ethiopia
                   </span>
                 </p>
@@ -55,7 +105,7 @@ const Contact = () => {
                     />
                   </svg>
 
-                  <span className="mx-2 text-gray-700 truncate w-72 ">
+                  <span className="mx-2 text-gray-700 truncate w-72">
                     +251991117306
                   </span>
                 </p>
@@ -76,27 +126,27 @@ const Contact = () => {
                     />
                   </svg>
 
-                  <span className="mx-2 text-gray-700 truncate w-72 ">
+                  <span className="mx-2 text-gray-700 truncate w-72">
                     haletamedical@gmail.com
                   </span>
                 </p>
               </div>
 
               <div className="mt-6 w-80 md:mt-8">
-                <h3 className="text-gray-700  ">Follow us</h3>
+                <h3 className="text-gray-700">Follow us</h3>
 
-                <div className="flex mt-4 -mx-1.5 ">
+                <div className="flex mt-4 -mx-1.5">
                   <ul className="flex items-center justify-center space-x-8 xl:justify-end">
                     <li>
                       <a
                         href="https://www.linkedin.com/company/haleta-medical-services/"
-                        title="Linedin"
+                        title="LinkedIn"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <Image
                           src="/linkedin.png"
-                          alt="gmail"
+                          alt="LinkedIn"
                           width={30}
                           height={10}
                         />
@@ -109,15 +159,19 @@ const Contact = () => {
 
             <div data-aos="zoom-out-left" className="mt-8 lg:w-1/2 lg:mx-6">
               <div className="w-full px-8 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl lg:max-w-xl shadow-gray-300/50 dark:shadow-black/30">
-                <form className="mt-6">
+                <form ref={form} onSubmit={sendEmail} className="mt-6">
                   <div className="flex-1">
-                    <label className="block mb-2 text-sm text-gray-700 ">
+                    <label className="block mb-2 text-sm text-gray-700">
                       Full Name
                     </label>
                     <input
                       type="text"
+                      name="user_name" 
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       placeholder="John Doe"
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400   rounded-md  dark:text-gray-300  focus:ring-blueish shadow-sm focus:outline-none focus:ring focus:ring-opacity-90"
+                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 rounded-md focus:ring-blueish shadow-sm focus:outline-none focus:ring focus:ring-opacity-90"
+                      required
                     />
                   </div>
 
@@ -127,8 +181,12 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
+                      name="user_email" 
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="johndoe@example.com"
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400   rounded-md dark:placeholder-gray-600dark:text-gray-300   focus:ring-blueish shadow-sm focus:outline-none focus:ring focus:ring-opacity-90"
+                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 rounded-md dark:placeholder-gray-600 focus:ring-blueish shadow-sm focus:outline-none focus:ring focus:ring-opacity-90"
+                      required
                     />
                   </div>
 
@@ -137,14 +195,20 @@ const Contact = () => {
                       Message
                     </label>
                     <textarea
-                      className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400  rounded-md md:h-48  dark:text-gray-300  focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blueish focus:outline-none focus:ring focus:ring-opacity-90 shadow-sm"
+                      name="message" 
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 rounded-md md:h-48 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blueish focus:outline-none focus:ring focus:ring-opacity-90 shadow-sm"
                       placeholder="Message"
+                      required
                     ></textarea>
                   </div>
 
-                  <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blueish rounded-md hover:bg-[#FF9141]">
-                    get in touch
-                  </button>
+                  <input
+                    type="submit"
+                    value="Send"
+                    className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blueish rounded-md hover:bg-[#FF9141]"
+                  />
                 </form>
               </div>
             </div>

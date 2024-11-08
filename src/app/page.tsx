@@ -13,6 +13,7 @@ import Solutions from "./component/Solutions";
 import Team from "./component/Team";
 import { DotLoader } from "react-spinners";
 import FloatingIcon from "./component/FloatingIcon";
+import { ToastContainer } from "react-toastify";
 
 const Pages = () => {
   const [loading, setLoading] = useState(true);
@@ -77,6 +78,7 @@ const Pages = () => {
           <FloatingIcon />
         </div>
       )}
+      <ToastContainer />
     </div>
   );
 };

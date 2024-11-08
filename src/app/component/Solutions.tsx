@@ -1,7 +1,22 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Solutions = () => {
+  const handleAppstore = () => {
+    toast.info("Opps! We are working on IOS", {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
   return (
     <section className="bg-white ">
       <h1
@@ -14,7 +29,7 @@ const Solutions = () => {
         <div data-aos="zoom-in-right" className="flex  justify-center xl:w-1/2">
           <Image
             className="h-80 w-80 sm:w-[28rem] shadow-2xl sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
-            src="/haletaapp.avif"
+            src="/haletaapp.png"
             alt="haleta app"
             width={500}
             height={500}
@@ -34,10 +49,10 @@ const Solutions = () => {
           </p>
 
           <div className="mt-6 sm:-mx-2">
-            <a
+            <button
+              onClick={handleAppstore}
               data-aos="fade-up"
-              href="#"
-              className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-[#FF9141] rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-[#d37a3a]   focus:ring focus:ring-gray-300 focus:ring-opacity-80"
+              className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-[#FF9141] rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-[#d37a3a]   "
             >
               <svg
                 className="w-5 h-5 mx-2 fill-current"
@@ -69,12 +84,12 @@ const Solutions = () => {
               </svg>
 
               <span className="mx-2">Get it on the App Store</span>
-            </a>
+            </button>
 
-            <a
-              href="#"
+            <Link
+              href="https://drive.google.com/file/d/1-1cBvg4iMm57n1SOyfQ_1nW53bjOBsMj/view?usp=sharing"
               data-aos="fade-up"
-              className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+              className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 "
             >
               <svg
                 className="w-5 h-5 mx-2 fill-current"
@@ -85,12 +100,12 @@ const Solutions = () => {
               </svg>
 
               <span className="mx-2">Get it on Google Play</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Solutions
+export default Solutions;
