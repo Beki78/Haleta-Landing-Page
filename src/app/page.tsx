@@ -4,6 +4,7 @@ import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
 import Services from "./component/Services";
 import Solutions from "./component/Solutions";
+import Team from "./component/Team";
 
 const pages = () => {
   return (
@@ -13,6 +14,7 @@ const pages = () => {
       <About/>
       <Services/>
       <Solutions/>
+      <Team/>
       <Footer5/>
     </div>
   );

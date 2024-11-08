@@ -5,11 +5,11 @@ const Services = () => {
   return (
     <section className="bg-white my-32 py-16 dark:bg-gray-100">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-3xl font-[400] text-gray-900 text-center mb-12">
+        <h1 className="text-3xl font-[500] text-gray-900 text-center mb-12">
           Our <span className="text-blueish font-[500]">Services</span>
         </h1>
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
-          <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-white shadow-md shadow-md">
+          <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-white shadow-md">
             <Image
               src="/alarm.png"
               alt="emergency transportation"

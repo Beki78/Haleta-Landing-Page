@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -37,8 +38,8 @@ const Hero = () => {
             </div>
 
             <div className=" flex justify-center">
-              <button
-                type="button"
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc_Dc_qIkE07GCyVeVMVKU9rnrayRTNcIP-eIr2cOO5JUyNYw/viewform?pli=1"
                 className="text-white bg-[#5D17EB] hover:bg-[#5D17EB] focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#5D17EB] dark:hover:bg-[#5e17ebdc]  focus:outline-none dark:focus:ring-blue-800 duration-300 ease-in-out font-bold"
               >
                 <div className="flex gap-2 items-center">
@@ -59,7 +60,7 @@ const Hero = () => {
                     />
                   </svg>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

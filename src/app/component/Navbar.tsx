@@ -28,7 +28,7 @@ useEffect(() => {
     <header
       className={
         header
-          ? "fixed bg-white w-full transition-all duration-500 ease-in-out "
+          ? "fixed bg-white w-full transition-all duration-500 ease-in-out z-50"
           : "bg-gray-800 "
       }
     >
