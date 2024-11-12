@@ -185,7 +185,7 @@ const Contact: React.FC = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="johndoe@example.com"
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 rounded-md dark:placeholder-gray-600 focus:ring-blueish shadow-sm focus:outline-none focus:ring focus:ring-opacity-90"
+                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 rounded-md  focus:ring-blueish shadow-sm focus:outline-none focus:ring focus:ring-opacity-90"
                       required
                     />
                   </div>

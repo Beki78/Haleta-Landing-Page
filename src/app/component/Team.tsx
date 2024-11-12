@@ -27,10 +27,10 @@ const Team = () => {
           >
             <Image
               className="object-cover w-32 h-32 rounded-full ring-4 ring-blueish duration-300 ease-in-out   group-hover:ring-[#FF9141]"
-              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-              alt=""
-              width={100}
-              height={100}
+              src="/Beti.jpg"
+              alt="Dr. Betelhem Tadele"
+              width={400}
+              height={400}
             />
 
             <h1 className="mt-4 text-xl  text-center font-[600] text-gray-900 capitalize duration-300 ease-in-out  group-hover:text-white">
@@ -48,10 +48,10 @@ const Team = () => {
           >
             <Image
               className="object-cover w-32 h-32 rounded-full ring-4 ring-blueish duration-300 ease-in-out   group-hover:ring-[#FF9141]"
-              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-              alt=""
-              width={100}
-              height={100}
+              src="/arsema.jpg"
+              alt="Dr. Arsema Goytom"
+              width={400}
+              height={400}
             />
 
             <h1 className="mt-4 text-xl  text-center font-semibold text-gray-900 capitalize duration-300 ease-in-out  group-hover:text-white">
@@ -69,10 +69,10 @@ const Team = () => {
           >
             <Image
               className="object-cover w-32 h-32 rounded-full ring-4 ring-blueish duration-300 ease-in-out   group-hover:ring-[#FF9141]"
-              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-              alt=""
-              width={100}
-              height={100}
+              src="/yordi.jpg"
+              alt="Dr. Yordanos Tsehay"
+              width={400}
+              height={400}
             />
 
             <h1 className="mt-4 text-xl font-semibold  text-center text-gray-900 capitalize duration-300 ease-in-out  group-hover:text-white">
