@@ -30,7 +30,7 @@ const Solutions = () => {
           <Image
             className="h-80 w-80 sm:w-[28rem] shadow-2xl sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
             src="/haletaapp.png"
-            alt="haleta app"
+            alt="Delta app"
             width={500}
             height={500}
           />

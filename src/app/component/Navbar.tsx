@@ -42,7 +42,7 @@ export default function Example() {
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <Image
-              alt="haleta logo"
+              alt="Delta logo"
               src="/logo.png"
               width={60}
               height={60}

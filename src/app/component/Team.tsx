@@ -38,7 +38,7 @@ const Team = () => {
             </h1>
 
             <p className="mt-2 text-gray-00  text-center capitalize duration-300 ease-in-out  group-hover:text-gray-300">
-              Founder of Haleta
+              Founder of Delta
             </p>
           </div>
 
@@ -59,7 +59,7 @@ const Team = () => {
             </h1>
 
             <p className="mt-2 text-gray-00 capitalize  text-center duration-300 ease-in-out  group-hover:text-gray-300">
-              Co-founder of Haleta
+              Co-founder of Delta
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const Team = () => {
             </h1>
 
             <p className="mt-2 text-gray-00 capitalize text-center duration-300 ease-in-out  group-hover:text-gray-300">
-              Cofounder & Program manager of Haleta
+              Cofounder & Program manager of Delta
             </p>
           </div>
           <div
@@ -100,7 +100,7 @@ const Team = () => {
             </h1>
 
             <p className="mt-2 text-gray-00 capitalize  text-center duration-300 ease-in-out  group-hover:text-gray-300">
-              Junior full stack web Developer of Haleta
+              Junior full stack web Developer of Delta
             </p>
           </div>
         </div>

@@ -10,49 +10,49 @@ const Accordion = () => {
 
   const faqs = [
     {
-      question: "What is Haleta and how does it work?",
+      question: "What is Delta and how does it work?",
       answer:
-        "Haleta is a comprehensive healthcare service platform designed to connect users with emergency transport services, health updates, and essential medical information. Through our easy-to-use mobile app, you can request medical transportation, receive notifications about health news, and access reliable healthcare services tailored to your needs.",
+        "Delta is a comprehensive healthcare service platform designed to connect users with emergency transport services, health updates, and essential medical information. Through our easy-to-use mobile app, you can request medical transportation, receive notifications about health news, and access reliable healthcare services tailored to your needs.",
     },
     {
-      question: "Who can use Haleta?",
+      question: "Who can use Delta?",
       answer:
-        "Haleta is available for anyone needing quick access to emergency medical transport, health updates, or assistance with non-emergency medical transportation (NEMT). Our services cater especially to families, elderly individuals, people with disabilities, and anyone seeking safe, reliable healthcare access.",
+        "Delta is available for anyone needing quick access to emergency medical transport, health updates, or assistance with non-emergency medical transportation (NEMT). Our services cater especially to families, elderly individuals, people with disabilities, and anyone seeking safe, reliable healthcare access.",
     },
     {
-      question: "How can I request an emergency transport through Haleta?",
+      question: "How can I request an emergency transport through Delta?",
       answer:
-        "Simply open the Haleta app, select the “Request Emergency Transport” option, and follow the prompts to confirm your location and transport requirements. We’ll immediately connect you with the nearest ambulance or medical transport provider.",
+        "Simply open the Delta app, select the “Request Emergency Transport” option, and follow the prompts to confirm your location and transport requirements. We’ll immediately connect you with the nearest ambulance or medical transport provider.",
     },
     {
-      question: "What types of transportation does Haleta offer?",
+      question: "What types of transportation does Delta offer?",
       answer:
-        "Haleta offers a range of transportation options, including basic ambulances, advanced ambulances, VIP transport vehicles, and regular automobiles for non-emergency medical needs. We ensure that each option is equipped for safe and comfortable travel, tailored to your specific requirements.",
+        "Delta offers a range of transportation options, including basic ambulances, advanced ambulances, VIP transport vehicles, and regular automobiles for non-emergency medical needs. We ensure that each option is equipped for safe and comfortable travel, tailored to your specific requirements.",
     },
     {
-      question: "Is Haleta available 24/7?",
+      question: "Is Delta available 24/7?",
       answer:
-        " Yes, Haleta is available 24/7 to ensure that you can access emergency medical transportation and support whenever you need it, day or night.",
+        " Yes, Delta is available 24/7 to ensure that you can access emergency medical transportation and support whenever you need it, day or night.",
     },
     {
-      question: "How much does it cost to use Haleta’s services?",
+      question: "How much does it cost to use Delta’s services?",
       answer:
         "The cost varies based on the type of transportation or service needed. Our app provides a transparent pricing structure so you can see and understand any fees before you confirm a request.",
     },
     {
-      question: "How do I get updates on health information through Haleta?",
+      question: "How do I get updates on health information through Delta?",
       answer:
         "Our app provides a dedicated section for health updates, where you can read the latest health news, advisories, and information on preventative care. You can also opt-in to receive notifications about critical health updates.",
     },
     {
-      question: "Can I use Haleta for scheduled medical appointments?",
+      question: "Can I use Delta for scheduled medical appointments?",
       answer:
-        "Yes, Haleta provides Non-Emergency Medical Transportation (NEMT) services, which allow you to schedule medical transport in advance for routine appointments, treatments, or check-ups.",
+        "Yes, Delta provides Non-Emergency Medical Transportation (NEMT) services, which allow you to schedule medical transport in advance for routine appointments, treatments, or check-ups.",
     },
     {
-      question: "How do I get started with Haleta?",
+      question: "How do I get started with Delta?",
       answer:
-        "Getting started with Haleta is simple! Download our app from the App Store or Google Play, create a free account, and you’ll be ready to access all our services, from emergency transport to health information and more.",
+        "Getting started with Delta is simple! Download our app from the App Store or Google Play, create a free account, and you’ll be ready to access all our services, from emergency transport to health information and more.",
     },
   ];
 

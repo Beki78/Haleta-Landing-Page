@@ -8,7 +8,7 @@ const About = () => {
         data-aos="fade-up"
         className="text-3xl font-[400] text-gray-900 text-center mb-12"
       >
-        About <span className="text-blueish font-[500]">Haleta</span>
+        About <span className="text-blueish font-[500]">Delta</span>
       </h1>
       <div className="flex flex-col lg:flex-row gap-12 justify-between items-center mx-4 md:mx-12 lg:mx-16">
         <video
@@ -26,7 +26,7 @@ const About = () => {
           className="shadow-left px-4 py-10 rounded-md "
         >
           <p>
-            Haleta is a health care platform that provides reliable and easily
+            Delta is a health care platform that provides reliable and easily
             accessible medical transportation services, ensuring a safe and
             comfortable journey for every patient. We offer a variety of
             services to meet your needs, from emergency ambulance transport to
